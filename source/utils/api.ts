@@ -21,7 +21,6 @@ const get = async <T>(url: string, tempConfig?: any): Promise<T> =>
     .get(getUrl(url, tempConfig), getConfig(tempConfig))
     .then((res) => res.data)
     .catch((error: any) => {
-      console.log(getUrl(url, tempConfig), getConfig())
       throw new Error(error.response.data.message)
     })
 

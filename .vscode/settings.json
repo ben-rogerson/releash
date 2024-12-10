@@ -1,5 +1,11 @@
 {
-  "cSpell.words": ["groupby", "nanospinner", "pluralise", "releash"],
+  "cSpell.words": [
+    "groupby",
+    "hellip",
+    "nanospinner",
+    "pluralise",
+    "releash"
+  ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
