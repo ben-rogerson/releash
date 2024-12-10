@@ -1,31 +1,39 @@
-# Releash
+# 🎏 Releash
 
-Interactive CLI to view [Unleash](https://www.getunleash.io/) feature flags without needing to access the [Unleash web UI](https://app.unleash-hosted.com/sign-in).
+A command line tool to view your [Unleash](https://www.getunleash.io/) feature flags.
 
-🔥 **View flag details**<br>
-Quickly access your flag details, seeing possible issues highlighted.
+⚡ Quickly access flag details for each environment<br>
+⛲ Freshest flag data possible<br>
+⚠️ Crucial flag details highlighted for scanning<br>
+💭 No need to use/remember command line parameters<br>
+🥰 Darn easy setup process
 
-📈 **Coming soon: Flag reports**<br>
-View and export detailed flag reports of your flags.
-
-💊 **Coming soon: Health score display**<br>
-View Unleash health scores for each flag.
-
-## Getting started
+## Get started
 
 ```bash
-$ npm install --global releash
-```
-
-Start the CLI:
-
-```shell
+# Install the tool globally for easy access
+npm install --global releash
+# Run the app
 releash
-
-# Or specify a project
-releash --project Project
-releash -p Project
 ```
+
+Enjoy!
+
+## Next
+
+📈 **Flag reports**<br>
+A flag monitor that picks up any incorrect details that may differ.<br>
+View and export detailed data reports of your flags.
+
+💊 **Health score display**<br>
+See Unleash health scores for each flag.
+
+✅ **TODOS**<br>
+
+- [ ] Add flag reports
+- [ ] Add health score display
+- [ ] Add a search feature
+- [ ] Add flag history?
 
 ---
 
