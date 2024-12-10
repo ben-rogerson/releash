@@ -1,0 +1,77 @@
+{
+  "name": "releash",
+  "description": "A simple interactive CLI for Unleash: https://www.getunleash.io/",
+  "keywords": [
+    "cli",
+    "unleash",
+    "feature-toggles"
+  ],
+  "version": "0.0.0",
+  "license": "MIT",
+  "bin": "dist/cli.js",
+  "main": "dist/cli.js",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon -q --no-stdin --watch source --ext ts --exec \"tsc --noemit && node --import=./register.js .\"",
+    "dev:watch": "tsc --watch",
+    "test": "prettier --check . && xo && ava",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json}\""
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "axios": "^1.7.8",
+    "cli-table3": "^0.6.5",
+    "import-jsx": "^5.0.0",
+    "ink": "^4.1.0",
+    "ink-quicksearch-input": "^1.0.0",
+    "ink-select-input": "^6.0.0",
+    "ink-spinner": "^5.0.0",
+    "inquirer": "^12.2.0",
+    "meow": "^11.0.0",
+    "nanospinner": "^1.2.2",
+    "nconf": "^0.12.1",
+    "object.groupby": "^1.0.3",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@sindresorhus/tsconfig": "^3.0.1",
+    "@types/nconf": "^0.10.7",
+    "@types/object.groupby": "^1.0.4",
+    "@types/react": "^18.0.32",
+    "@vdemedes/prettier-config": "^2.0.1",
+    "ava": "^5.2.0",
+    "chalk": "^5.2.0",
+    "eslint-config-xo-react": "^0.27.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "ink-testing-library": "^3.0.0",
+    "nodemon": "^3.1.7",
+    "prettier": "2.8.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3",
+    "xo": "^0.53.1"
+  },
+  "ava": {
+    "extensions": {
+      "ts": "module",
+      "tsx": "module"
+    },
+    "nodeArguments": [
+      "--loader=ts-node/esm"
+    ]
+  },
+  "xo": {
+    "extends": "xo-react",
+    "prettier": true,
+    "rules": {
+      "react/prop-types": "off"
+    }
+  }
+}
