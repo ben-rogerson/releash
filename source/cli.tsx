@@ -4,10 +4,7 @@ import { render } from 'ink'
 import meow from 'meow'
 import App from './app.js'
 import { config } from './utils/config.js'
-import { handler } from './utils/setup.js'
-
-// Start with a blank slate
-// console.clear()
+import { handler } from './setup.js'
 
 const cli = meow(
   `
@@ -15,10 +12,12 @@ const cli = meow(
 	  $ releash
 
 	Options
-		--project  Your project name in Unleash
+		-p  Your project name in Unleash
+		--setup    Run the setup wizard
 
 	Examples
-	  $ releash --project Dingoes
+	  $ releash -p <project-name>)
+	  $ releash --setup
 `,
   {
     importMeta: import.meta,
@@ -29,12 +28,15 @@ const cli = meow(
       },
       setup: {
         type: 'boolean',
+        alias: 's',
       },
     },
   }
 )
 
 if (!config.isValid()) {
+  handler()
+} else if (cli.flags.setup) {
   handler()
 } else {
   render(<App project={cli.flags.project} />)
