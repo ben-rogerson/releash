@@ -399,9 +399,9 @@ const FlagPicker = ({
     (f) => {
       const daysBack = daysAgo(f.createdAt)
       return {
-        label: `${colorNotice(daysBack === 0 ? 'today' : `${daysBack}d`)} ${
-          f.name
-        } ${chalk.reset(colorMuted(`(${f.type})`))} ${
+        label: `${f.favorite ? '✨' : ''}${colorNotice(
+          daysBack === 0 ? 'today' : `${daysBack}d`
+        )} ${f.name} ${chalk.reset(colorMuted(`(${f.type})`))} ${
           f.stale ? chalk.red('Stale') : ''
         }`,
         value: f.name.toLowerCase(),
