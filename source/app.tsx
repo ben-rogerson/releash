@@ -570,14 +570,23 @@ export default function App({ project: cliProject }: { project?: string }) {
           <Text>🎏 Releash </Text>
           {!isFetchingProjects && !Boolean(selectedProjectId) && (
             <Text>
-              ({projects.length} {pluralise('project', projects.length)})
+              {colorMuted(
+                `(${projects.length} ${pluralise('project', projects.length)})`
+              )}
             </Text>
           )}
           {showFlagPicker && (
             <Text>
-              {colorMuted('›')} {currentProject?.name} (
-              {isFetchingFlags ? <Spinner type="circleHalves" /> : flags.length}{' '}
-              feature {pluralise('flag', flags.length)})
+              {colorMuted('›')} {currentProject?.name}{' '}
+              {colorMuted(
+                `(${
+                  isFetchingFlags ? (
+                    <Spinner type="circleHalves" />
+                  ) : (
+                    flags.length
+                  )
+                } feature ${pluralise('flag', flags.length)})`
+              )}
             </Text>
           )}
           {showEnvironmentDetail && (
