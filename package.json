@@ -1,5 +1,5 @@
 {
-  "name": "releash",
+  "name": "releash-cli",
   "description": "A simple interactive CLI for Unleash: https://www.getunleash.io/",
   "keywords": [
     "cli",
