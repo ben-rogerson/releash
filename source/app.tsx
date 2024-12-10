@@ -11,7 +11,6 @@ import {
   colorMuted,
   colorNotice,
   daysAgo,
-  getEnvironmentEmoji,
   getVariantEmoji,
   pluralise,
 } from './utils/utils.js'
@@ -481,11 +480,7 @@ const Overview = ({
   </Box>
 )
 
-export default function App({
-  project: cliProject,
-}: {
-  project: string | undefined
-}) {
+export default function App({ project: cliProject }: { project?: string }) {
   const [flag, setFlag] = useState<FeatureToggleListItem['name']>('')
 
   const { projects, isFetching: isFetchingProjects } = useProjects()
@@ -645,10 +640,10 @@ export default function App({
           <Box flexDirection="column" marginBottom={1}>
             <SelectInput
               items={[
-                { label: '👈 Back', value: '' },
+                { label: '< Back', value: '' },
                 ...enabledEnvironments.reverse().map((e) => {
                   return {
-                    label: `${getEnvironmentEmoji(e.type)} ${e.name} ${
+                    label: `${colorMuted('- ')}${e.name} ${
                       e.type && e.type !== 'string'
                         ? colorMuted(`(${e.type})`)
                         : ''

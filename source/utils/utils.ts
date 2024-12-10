@@ -11,9 +11,6 @@ export const daysAgo = (date: string) => {
 export const getVariantEmoji = (i: number) =>
   ['🟣', '🟡', '🟢', '🔵', '🟠', '🔴'][i] ?? '🟤'
 
-export const getEnvironmentEmoji = (name: string) =>
-  (name === 'production' && '🔴') || (name === 'preproduction' && '🟠') || '🟢'
-
 export const colorNotice = (text: string) => chalk.hex('#F7F05A').bold(text)
 
 export const colorMuted = (text: string) => chalk.gray(text)
