@@ -1,16 +1,27 @@
 {
   "name": "releash-cli",
-  "description": "A simple interactive CLI for Unleash: https://www.getunleash.io/",
-  "keywords": [
-    "cli",
-    "unleash",
-    "feature-toggles"
-  ],
-  "version": "0.1.2",
-  "license": "MIT",
   "bin": {
     "releash": "dist/cli.js"
   },
+  "version": "0.1.3",
+  "description": "A simple interactive CLI for Unleash: https://www.getunleash.io/",
+  "license": "MIT",
+  "keywords": [
+    "cli",
+    "unleash",
+    "unleash cli",
+    "feature-toggles",
+    "feature flags"
+  ],
+  "author": "Ben Rogerson <info@benrogerson.dev>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ben-rogerson/releash-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ben-rogerson/releash-cli/issues"
+  },
+  "homepage": "https://github.com/ben-rogerson/releash-cli#readme",
   "main": "dist/cli.js",
   "type": "module",
   "engines": {
