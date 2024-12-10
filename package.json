@@ -8,7 +8,9 @@
   ],
   "version": "0.1.0",
   "license": "MIT",
-  "bin": "dist/cli.js",
+  "bin": {
+    "releash": "dist/cli.js"
+  },
   "main": "dist/cli.js",
   "type": "module",
   "engines": {
