@@ -568,29 +568,32 @@ export default function App({
   const showEnvironmentDetail = selectedProjectId && currentFlag
 
   const header = (
-    <Box flexDirection="column" marginY={1}>
-      <Text bold>
-        <Text>Releash </Text>
-        {!isFetchingProjects && !Boolean(selectedProjectId) && (
-          <Text>
-            ({projects.length} {pluralise('project', projects.length)})
-          </Text>
-        )}
-        {showFlagPicker && (
-          <Text>
-            {colorMuted('›')} {currentProject?.name} (
-            {isFetchingFlags ? <Spinner type="circleHalves" /> : flags.length}{' '}
-            feature {pluralise('flag', flags.length)})
-          </Text>
-        )}
-        {showEnvironmentDetail && (
-          <Text>
-            {colorMuted('›')} {currentProject?.name} {colorMuted('›')}{' '}
-            {currentFlag.name}
-          </Text>
-        )}
-      </Text>
-    </Box>
+    <>
+      <Divider color="#333" />
+      <Box flexDirection="column" marginBottom={1}>
+        <Text bold>
+          <Text>🎏 Releash </Text>
+          {!isFetchingProjects && !Boolean(selectedProjectId) && (
+            <Text>
+              ({projects.length} {pluralise('project', projects.length)})
+            </Text>
+          )}
+          {showFlagPicker && (
+            <Text>
+              {colorMuted('›')} {currentProject?.name} (
+              {isFetchingFlags ? <Spinner type="circleHalves" /> : flags.length}{' '}
+              feature {pluralise('flag', flags.length)})
+            </Text>
+          )}
+          {showEnvironmentDetail && (
+            <Text>
+              {colorMuted('›')} {currentProject?.name} {colorMuted('›')}{' '}
+              {currentFlag.name}
+            </Text>
+          )}
+        </Text>
+      </Box>
+    </>
   )
 
   const unleashUrl = [
