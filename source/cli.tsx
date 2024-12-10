@@ -13,11 +13,11 @@ const cli = meow(
 
 	Options
 		-p  Your project name in Unleash
-		--setup    Run the setup wizard
+		-s    Run the setup wizard
 
 	Examples
-	  $ releash -p <project-name>)
-	  $ releash --setup
+	  $ releash -p <project-name>
+	  $ releash -s
 `,
   {
     importMeta: import.meta,

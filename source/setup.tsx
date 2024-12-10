@@ -108,7 +108,7 @@ const save = ({
       text: `Setup complete! 🎉\n\n${chalk.yellow(
         '✨Tips'
       )}\n- Run ${chalk.bold(
-        'releash --setup'
+        'releash -s'
       )} to update your API token or default project.\n- Run ${chalk.bold(
         `releash -p <project-name>`
       )} to open a specific project (project name is unfussy).\n`,
