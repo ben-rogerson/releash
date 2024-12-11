@@ -1,7 +1,6 @@
 # 🎏 Releash-cli
 
 [![npm](https://img.shields.io/npm/v/releash-cli?colorA=9792ed&colorB=fffaeb)](https://www.npmjs.com/package/releash-cli)
-[![minzip package size](https://img.shields.io/bundlephobia/minzip/releash-cli?label=minzip%20size&colorA=9792ed&colorB=fffaeb)](https://bundlephobia.com/package/releash-cli)
 
 A command line tool to view your [Unleash](https://www.getunleash.io/) feature flags.
 
@@ -36,7 +35,7 @@ See Unleash health scores for each flag.
 - [ ] Add flag reports
 - [ ] Add health score display
 - [ ] Add a search feature
-- [ ] Add flag history?
+- [ ] Add flag history
 
 ---
 
