@@ -62,7 +62,7 @@ export const handler = () => {
           default: config.token,
         },
         {
-          message: `Always open a specific project? (optional) Enter the project name:`,
+          message: `Always open a specific project? Enter the project name (optional):`,
           name: 'project',
           optional: true,
           default: config.project,
