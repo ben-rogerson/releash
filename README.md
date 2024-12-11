@@ -1,6 +1,6 @@
-# 🎏 Releash-cli
+# 🎏 Releash
 
-[![npm](https://img.shields.io/npm/v/releash-cli?colorA=9792ed&colorB=fffaeb)](https://www.npmjs.com/package/releash-cli)
+[![npm](https://img.shields.io/npm/v/releash?colorA=9792ed&colorB=fffaeb)](https://www.npmjs.com/package/releash)
 
 A command line tool to view your [Unleash](https://www.getunleash.io/) feature flags.
 
@@ -14,12 +14,12 @@ A command line tool to view your [Unleash](https://www.getunleash.io/) feature f
 
 ```bash
 # Install the tool globally for easy access
-npm install --global releash-cli
+npm install --global releash
 # Run the app
 releash
 ```
 
-Please [share some feedback](https://github.com/ben-rogerson/releash-cli/discussions/new/choose)!
+Please [share some feedback](https://github.com/ben-rogerson/releash/discussions/new/choose)!
 
 ## Next
 

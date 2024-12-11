@@ -1,5 +1,5 @@
 {
-  "name": "releash-cli",
+  "name": "releash",
   "bin": {
     "releash": "dist/cli.js"
   },
@@ -16,12 +16,12 @@
   "author": "Ben Rogerson <info@benrogerson.dev>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ben-rogerson/releash-cli.git"
+    "url": "git+https://github.com/ben-rogerson/releash.git"
   },
   "bugs": {
-    "url": "https://github.com/ben-rogerson/releash-cli/issues"
+    "url": "https://github.com/ben-rogerson/releash/issues"
   },
-  "homepage": "https://github.com/ben-rogerson/releash-cli#readme",
+  "homepage": "https://github.com/ben-rogerson/releash#readme",
   "main": "dist/cli.js",
   "type": "module",
   "engines": {
